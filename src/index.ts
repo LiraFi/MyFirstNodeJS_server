@@ -15,7 +15,7 @@ const requestListener = (req: IncomingMessage, res:ServerResponse)=> {
     return;
   } 
   //DELETE method
-  if(req.method==="DELETE" && req.url ==="/users:userID"){
+  if(req.method==="DELETE" && req.url ==="/users/:userID"){
     res.write("Delete a user with an id 1!");
     res.end();
     return;
